@@ -18,3 +18,32 @@ cd DCNv2
 ./make.sh
 ```
 
+## Training
+* Download the training data
+* Change the dataset root directory 'root' in src/lib/cfg/data.json and 'data_dir' in src/lib/opts.py
+* Pretrain on MOTSynth and finetuned by CrowdHuman:
+```
+sh experiments/motsynth_saca_idm_clip.sh
+sh experiments/crowdhuman_motsynth_saca_idm_clip.sh
+```
+* Train on MOT17:
+```
+sh experiments/mix_mot17_ch60_synth_saca_idm_clip.sh
+```
+* Train on MOT20:
+```
+sh experiments/mix_mot20_ch60_synth_saca_idm_clip.sh
+```
+
+## Tracking
+* Tracking on MOT17 test set:
+```
+cd src
+python track.py mot --arch dlaSACAidm_34 --load_model $model_path$ --test_mot17 True --match_thres 0.4 --conf_thres 0.25
+```
+* Tracking on MOT20 test set:
+```
+cd src
+python track.py mot --arch dlaSACAidm_34 --load_model $model_path$ --test_mot20 True --match_thres 0.4 --conf_thres 0.25
+```
+
