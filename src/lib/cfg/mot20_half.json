@@ -1,0 +1,15 @@
+{
+    "root":"/media",
+    "train":
+    {
+        "mot20":"./data/mot20.half"
+    },
+    "test_emb":
+    {
+        "mot17":"./data/mot17.emb"
+    },
+    "test":
+    {
+        "mot17":"./data/mot17.val"
+    }
+}
