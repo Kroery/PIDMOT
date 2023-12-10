@@ -47,3 +47,15 @@ cd src
 python track.py mot --arch dlaSACAidm_34 --load_model $model_path$ --test_mot20 True --match_thres 0.4 --conf_thres 0.25
 ```
 
+## Citation
+~~~
+@ARTICLE{10342840,
+  author={Lv, Weiyi and Zhang, Ning and Zhang, Junjie and Zeng, Dan},
+  journal={IEEE Transactions on Circuits and Systems for Video Technology}, 
+  title={One-shot Multiple Object Tracking with Robust ID Preservation}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={1-1},
+  doi={10.1109/TCSVT.2023.3339609}}
+~~~
