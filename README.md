@@ -1,4 +1,5 @@
 # PIDMOT
+Official implementation for TCSVT paper: “One-shot Multiple Object Tracking with Robust ID Preservation”
 
 ## Installation
 PIDMOT is built upon codebase of [FairMOT](https://github.com/ifzhang/FairMOT). We use python 3.7 and pytorch >= 1.2.0
